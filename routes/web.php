@@ -14,6 +14,6 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
-Route::get('/bar-chart', [ChartController::class, 'barChart']);
+Route::get('/escolasRegiao', [ChartController::class, 'escolasPorRegiao']);
 
 require __DIR__.'/auth.php';
